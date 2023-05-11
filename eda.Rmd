@@ -1,0 +1,129 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(readxl)
+library(tidyverse)
+library(ggplot2)
+library(grid)
+```
+
+```{r}
+df <- read_excel("train.xlsx")
+head(df)
+```
+
+```{r}
+summary(df)
+```
+
+```{r}
+str(df) 
+```
+
+```{r}
+drop <- c("Patient Id","Patient First Name","Family Name","Father's name","Institute Name","Location of Institute")
+df = df[,!(names(df) %in% drop)]
+```
+
+```{r}
+drop <- c("Test 1","Test 2","Test 3","Test 4","Test 5","Parental consent","Place of birth")
+df = df[,!(names(df) %in% drop)]
+```
+
+```{r}
+dim(df)
+```
+
+```{r}
+df <-df %>% drop_na()
+dim(df)
+```
+
+```{r}
+names(df) <- gsub(" ", "_", names(df))
+names(df) <- gsub("\\(", "_", names(df))
+names(df) <- gsub("\\)", "_", names(df))
+names(df) <- gsub("\\/", "_", names(df))
+names(df) <- gsub("'", "_", names(df))
+names(df) <- gsub("-", "_", names(df))
+```
+
+```{r}
+ggplot(data = df, aes(Genetic_Disorder,fill = Disorder_Subclass)) +
+geom_bar(width = 0.6)+  scale_x_discrete(guide = guide_axis(n.dodge = 2))
+```
+
+```{r}
+df <- subset(df, select = - Genetic_Disorder)
+```
+
+```{r}
+library(gridExtra)
+
+p1 <- ggplot(data = df, aes(Symptom_1,fill = Disorder_Subclass)) +
+    geom_bar(width = 0.6)+  scale_x_discrete(guide = guide_axis(n.dodge = 2))
+p2 <- ggplot(data = df, aes(Symptom_2,fill = Disorder_Subclass)) +
+    geom_bar(width = 0.6)+  scale_x_discrete(guide = guide_axis(n.dodge = 2))
+p3 <- ggplot(data = df, aes(Symptom_3,fill = Disorder_Subclass)) +
+    geom_bar(width = 0.6)+  scale_x_discrete(guide = guide_axis(n.dodge = 2))
+p4 <- ggplot(data = df, aes(Symptom_4,fill = Disorder_Subclass)) +
+    geom_bar(width = 0.6)+  scale_x_discrete(guide = guide_axis(n.dodge = 2))
+grid.arrange(p1,p2,p3,p4,ncol=1)
+```
+
+```{r}
+str(df)
+```
+
+```{r}
+library(reshape2)
+df1 %>%
+  select(-c(Disorder_Subclass,Blood_test_result, Birth_defects,Status,Respiratory_Rate__breaths_min_,Heart_Rate__rates_min,Gender,Follow_up,Birth_asphyxia ,Autopsy_shows_birth_defect__if_applicable_,Folic_acid_details__peri_conceptional_,H_O_serious_maternal_illness,H_O_radiation_exposure__x_ray_,H_O_substance_abuse,Assisted_conception_IVF_ART,History_of_anomalies_in_previous_pregnancies,Paternal_gene,Genes_in_mother_s_side,Inherited_from_father,Maternal_gene )) %>%
+  cor() %>%
+  melt() %>%
+  ggplot(aes(x=Var1, y=Var2, fill=value)) +
+  geom_tile() +
+  scale_fill_gradient2(low="green", mid="blue", high="red", midpoint=0) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+ggplot(data = df, aes(x = Mother_s_age, y = Patient_Age)) + geom_point()
+```
+
+```{r}
+# Histogram with density plot
+ggplot(df, aes(x=Patient_Age)) + 
+ geom_histogram(aes(y=..density.., colour="black", fill=Disorder_Subclass))+
+ geom_density(alpha=.2, fill="#FF6666")
+```
+
+```{r}
+ggplot(df, aes(x=Mother_s_age)) + 
+ geom_histogram(aes(y=..density.., colour="black", fill=Disorder_Subclass))+
+ geom_density(alpha=.2, fill="#FF6666")
+```
+
+```{r}
+
+```
+
+```{r}
+ggplot(df, aes(x=Father_s_age)) + 
+ geom_histogram(aes(y=..density.., colour="black", fill=Disorder_Subclass))+
+ geom_density(alpha=.2, fill="#FF6666")
+```
+
+```{r}
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
