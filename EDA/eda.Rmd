@@ -1,0 +1,109 @@
+---
+title: "EDA Notebook"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+```{r}
+library(readxl)
+library(tidyverse)
+library(ggplot2)
+library(grid)
+```
+
+```{r}
+df <- read_excel("train.xlsx")
+head(df)
+```
+
+```{r}
+summary(df)
+```
+
+```{r}
+str(df) 
+```
+
+```{r}
+drop <- c("Patient Id","Patient First Name","Family Name","Father's name","Institute Name","Location of Institute")
+df = df[,!(names(df) %in% drop)]
+```
+
+```{r}
+drop <- c("Test 1","Test 2","Test 3","Test 4","Test 5","Parental consent","Place of birth")
+df = df[,!(names(df) %in% drop)]
+```
+
+```{r}
+dim(df)
+```
+
+```{r}
+df <-df %>% drop_na()
+dim(df)
+```
+
+
+
+```{r}
+names(df) <- gsub(" ", "_", names(df))
+names(df) <- gsub("\\(", "_", names(df))
+names(df) <- gsub("\\)", "_", names(df))
+names(df) <- gsub("\\/", "_", names(df))
+names(df) <- gsub("'", "_", names(df))
+names(df) <- gsub("-", "_", names(df))
+```
+
+```{r}
+ggplot(data = df, aes(Genetic_Disorder,fill = Disorder_Subclass)) +
+geom_bar(width = 0.6)+  scale_x_discrete(guide = guide_axis(n.dodge = 2))
+```
+
+```{r}
+df <- subset(df, select = - Genetic_Disorder)
+```
+
+```{r}
+library(gridExtra)
+
+p1 <- ggplot(data = df, aes(Symptom_1, fill = Disorder_Subclass)) +
+    geom_bar(width = 0.6) + scale_x_discrete(guide = guide_axis(n.dodge = 2))
+p2 <- ggplot(data = df, aes(Symptom_2, fill = Disorder_Subclass)) +
+    geom_bar(width = 0.6) + scale_x_discrete(guide = guide_axis(n.dodge = 2))
+p3 <- ggplot(data = df, aes(Symptom_3, fill = Disorder_Subclass)) +
+    geom_bar(width = 0.6) + scale_x_discrete(guide = guide_axis(n.dodge = 2))
+p4 <- ggplot(data = df, aes(Symptom_4, fill = Disorder_Subclass)) +
+    geom_bar(width = 0.6) + scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
+    theme(legend.position = "right")
+
+grid.arrange(p1, p2, p3, p4, ncol = 1)
+```
+
+```{r}
+str(df)
+```
+
+```{r}
+# Histogram with density plot
+ggplot(df, aes(x=Patient_Age)) + 
+ geom_histogram(aes(y=..density.., colour="black", fill=Disorder_Subclass))+
+ geom_density(alpha=.2, fill="#FF6666")
+```
+
+```{r}
+ggplot(df, aes(x=Mother_s_age)) + 
+ geom_histogram(aes(y=..density.., colour="black", fill=Disorder_Subclass))+
+ geom_density(alpha=.2, fill="#FF6666")
+```
+
+
+```{r}
+ggplot(df, aes(x=Father_s_age)) + 
+ geom_histogram(aes(y=..density.., colour="black", fill=Disorder_Subclass))+
+ geom_density(alpha=.2, fill="#FF6666")
+```
+
+```{r}
+
+```
