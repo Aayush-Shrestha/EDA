@@ -1,0 +1,33 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{Doe}
+R.~Doe, \emph{Miktex url}, \url {http://www.miktex.org}, June 2009.
+
+\bibitem{Gokul}
+K.~C. Gokul, D.~B. Gurung, and P.~R. Adhikary, \emph{Fem approach for one
+  dimensional temperature distribution in the human eye}, Proceedings of
+  National Conference on Mathematics (Kathmandu) (P.~R. Adhikary, K.~Jha, and
+  C.~Bhatta, eds.), Nepal Mathematical Society, 2012, pp.~35--46.
+
+\bibitem{db1}
+D.~B. Gurung, \emph{Mathematical study of abnormal thermoregulation in human
+  dermal parts}, Ph{D} {D}issertation, Kathmandu University, 2008, pp.~1--188.
+
+\bibitem{HK}
+H.~Kopka and P.~W. Daly, \emph{A guide to latex}, Addison-Wesley, Reading, MA,
+  1999.
+
+\bibitem{db3}
+B.~Roy, S.~K. Roy, and D.~B. Gurung, \emph{Holling-{T}anner model with
+  {B}eddington-{D}e{A}ngelis functional response and time delay introducing
+  harvesting}, Mathematics and Computers in Simulation \textbf{142} (2017),
+  1--14.
+
+\end{thebibliography}

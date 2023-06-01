@@ -1,0 +1,164 @@
+\documentclass[a4paper,12pt]{report}    % Document Class
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % PACKAGES
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\linespread{1.5}                    % For line spacing
+\usepackage{amssymb}                % For AMS symbol
+\usepackage{amsmath}                % This is useful for the matrix 
+\usepackage{verbatim}               % For comments in paragraph
+\usepackage{graphicx}               % For imbeding graph
+\usepackage{color}                  % Color for the text
+\usepackage{makeidx}
+\usepackage{url}
+%\usepackage{apacite}
+\usepackage{sectsty}
+\chapterfont{\centering}
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % %
+% % % % FOR ADJUSTMENT OF PAGES
+% % % % % % % % % % % % % % % % % % % % % % %
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+
+% % % % % % % % % % % % % % % % % % % % % % % %
+% % % % FOR SHORTCUT USE
+% % % % % % % % % % % % % % % % % % % % % % % %
+\newtheorem{df}{Definition} % For definition
+\newtheorem{exm}{Example}   % For Example
+\newtheorem{exe}{Exercise}  % For Exercise
+\newtheorem{prob}{Problem}  % For Problem
+\newtheorem{task}{TASK}     % For Task
+\newtheorem{thm}{Theorem}   % For Theorem
+% % % % % % % % % % % % % % % % % % % % % % % % %
+\renewcommand{\chaptername}{CHAPTER}
+\renewcommand{\contentsname}{\centering CONTENTS}
+\renewcommand{\listfigurename}{\centering LIST OF FIGURES}
+\renewcommand{\listtablename}{\centering LIST OF TABLES}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}
+%==================================================================
+\begin{document}
+% % % % % % % % % % % % %
+\pagenumbering{roman}
+%===================================================================
+%   Begin your document hereafter
+%=====================================================================
+
+
+{\large
+\begin{center}
+{{\bf{\color{red}WRITE THE TITLE OF YOUR PROJECT HERE (ALL CAPS)}}}\\
+\end{center}
+
+
+\vspace{0.8cm}
+
+{\normalsize
+\begin{center}
+A FIRST YEAR PROJECT REPORT\\
+
+\vspace{0.5cm}
+SUBMITTED IN PARTIAL FULFILLMENT OF THE REQUIREMENTS FOR\\
+THE DEGREE OF B.Sc. IN COMPUTATIONAL MATHEMATICS\\
+
+\vspace{1.0cm}
+
+BY
+\end{center}
+\begin{center}
+\begin{itemize}
+\begin{center}
+\item[1.] First Name Last Name (Exam Roll No.)
+\item[2.] First Name Last Name (Exam Roll No.)
+\item[3.] First Name Last Name (Exam Roll No.)
+\end{center}
+\end{itemize}
+
+\end{center}
+
+
+\vspace{1.0cm}
+
+\begin{figure}[htpb]
+\centering
+\includegraphics[height=4.5cm,width=4.5cm]{photos/kulogo.jpg}
+\end{figure}
+
+
+\vspace{2cm}
+{\normalsize
+\begin{center}
+%DEPARTMENT OF NATURAL SCIENCES (MATHEMATICS)\\
+SCHOOL OF SCIENCE\\
+KATHMANDU UNIVERSITY\\
+DHULIKHEL, NEPAL\\
+\end{center}
+}
+
+\begin{center}
+	{\color{red} MONTH AND YEAR OF COMPLETION}
+\end{center}
+
+}
+}
+
+%\underbrace{}
+\thispagestyle{empty}	% No numbering in this page
+
+%===================================================================
+%\newpage
+%\input{Dedication}
+
+%\newpage
+%\input{Student_declaration}
+
+\newpage
+\input{Certificate_by_supervisor}
+
+
+%\newpage
+%\input{acknowledgement}
+
+%\newpage
+%\input{abstract}
+
+
+% ===================================================================
+
+\tableofcontents
+
+
+\listoffigures
+%\addcontentsline{toc}{chapter}{List of Figures}
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+
+\listoftables
+%\addcontentsline{toc}{chapter}{List of Tables}
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
+
+\newpage
+\input{parameters}
+
+% ====================================================================
+\newpage
+\pagenumbering{arabic}
+\input{chapter1}
+\newpage
+\input{chapter2}
+\newpage
+\input{chapter3}
+\newpage
+\input{chapter4}
+
+
+%=====================================================================
+% For Reference settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\bibname}{\centering REFERENCES}
+\bibliographystyle{amsplain}
+
+\bibliography{bibtex_database/myrefs} % data base
+%===================================================================
+\end{document}
