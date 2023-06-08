@@ -1,20 +1,40 @@
+\chapter{METHODOLOGY}
 
-\chapter{METHODOLOGY/MODEL EQUATION}
+\section{{\bf{Theoretical Framework}}}
 
-\section{{\bf{Theoretical/Conceptual Framework}}}
-{\bf\color{red}In this section, the author(s) should describe the theoretical/mathematical principles behind the whole work relative to the project. The information collected from literature review shall be relevant in this section.
-}
+Exploratory Data Analysis (EDA) plays a pivotal role in the research process, allowing for a comprehensive examination of data without making any assumptions. Komorowski, Marshall, Salciccioli, and Crutain \cite{komorowski2016exploratory} emphasize the significance of EDA as a vital step in understanding datasets and uncovering valuable insights. The objectives of EDA encompass gaining insight into the dataset, visualizing potential relationships between features and outcome variables, detecting outliers and anomalies, and creating relevant variables. \\
+\noindent
+EDA methods can be categorized as graphical or non-graphical, as well as univariate or multivariate. Graphical techniques involve visualizing data through various plots, such as scatter plots, histograms, and box plots, to uncover patterns and trends. Non-graphical methods encompass numerical summaries, such as measures of central tendency, dispersion, and correlation coefficients, to provide a quantitative understanding of the data. Univariate analysis focuses on examining individual variables, while multivariate analysis explores relationships between multiple variables simultaneously.\\
+\noindent
+By adopting an exploratory mindset during EDA, researchers gain a deeper understanding of the dataset and identify potential issues or limitations. EDA serves as a crucial step in formulating research details, enabling researchers to make informed decisions about data selection, variable creation, and subsequent analysis.
 
 
-\section{{\bf{Model Equation }}}
-Your second section of Section 2 of Chapter 2.
-\subsection{\bf Right Aligned Numbering of an Equation}
-Your first subsection of Section 2 of Chapter 2.\\
-Follow the right aligned numbering of an equation.
 
-\begin{eqnarray}
-\rho\,c\,\frac{\partial u}{\partial t} = \nabla \cdot \left( k\, \nabla u \right) + \rho_b\,c_b\,w_b\,(u_a - u) + q_m 
-\end{eqnarray}
 
-\subsection{\bf Subsection 2}
-Your second subsection of Section 2 of Chapter 2.
+\section{{\bf{Data Collection And Preprocessing}}}
+The Data is a synthetic dataset obtained from \url{https://www.kaggle.com/datasets/mukund23/predict-the-genetic-disorder?select=train.csv}. And as shown in \ref{fig 1}, there are 2 target features and 43 parameter attributes. The EDA methodology discussed here will be used as a tool for dimensionality reduction.
+ \\
+\noindent
+The only preprocessing done before EDA is to convert the data file into a csv format and then to remove NA values from the data to ensure proper study of trends and relationships.
+
+
+\section{{\bf{Exploratory Data Analysis}}}
+
+\subsection{Non-graphical}
+
+\subsubsection[]{Uni-variate}
+	For each attribute, their count, sum, maximum, minimum, and standard deviation is computed if its a numeric attribute and unique values is its a non numerical attribute type. Based on this, those attribute that have no variance is removed as, when an attribute has no variance, it means that it has the same value across all instances or observations in the dataset. Such attributes do not contribute any discriminatory or informative value to the model.\cite{hughes2018feature}
+\subsubsection[]{Multi-variate}
+	A correlation analysis is done to see how one attribute is dependent/ correlated to another. This is done on the numeric attributes to detect and remove highly correlated attributes as suggested in \cite{peng2005feature}
+\subsection{Graphical}
+	\subsubsection[]{Uni-variate}
+	For each attribute, their count, spread is measured. Mostly using Bar graphs, pie charts, density charts and stem and leaf charts. This gives us the tentative spread of the data in relation to the attribute.
+	\subsubsection[]{Multi-variate}
+	The same charts plus where the data is grouped by using a second feature and few more such as Scatter plots, line charts helps us visualize the relation between the attributes. Also we can study the spread with respect to the features.
+\subsection{Domain Based}
+	As the data is to be dealt with as a data to be used in further development of a genetic inheritance classification model, attributes that are of less relevance to the domain are also not considered as a significant attribute. 
+
+\section{{\bf{Dashboard Creation}}}
+To facilitate data visualization and improve accessibility, we develop ouw own interactive dashboard in R as well as using the tool \url{https://visual.is}. The dashboard presents the insights obtained from the EDA in a user-friendly and visually appealing manner. It includes interactive charts, filters, and intuitive navigation features, enabling healthcare professionals to explore and interact with the data effectively. The dashboard serves as a valuable tool for decision-making and enhances the overall usability of our project.
+
+

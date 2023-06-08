@@ -1,18 +1,69 @@
-This is BibTeX, Version 0.99cThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: amsplain.bst
+Reallocating 'name_of_file' (item size: 1) to 23 items.
 Database file #1: bibtex_database/myrefs.bib
-Warning--string name "march" is undefined
---line 21 of file bibtex_database/myrefs.bib
-I was expecting a `,' or a `}'---line 69 of file bibtex_database/myrefs.bib
- : title = "Composition of Functions"
- :                                   .
-I'm skipping whatever remains of this entry
-You're missing a field part---line 84 of file bibtex_database/myrefs.bib
- : volume = 
- :          ''7'',
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 99 of file bibtex_database/myrefs.bib
- : year = "2012"
- :              .
-I'm skipping whatever remains of this entry
-(There were 3 error messages)
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1139 of file amsplain.bst
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1139 of file amsplain.bst
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1139 of file amsplain.bst
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1139 of file amsplain.bst
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1139 of file amsplain.bst
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1223 of file amsplain.bst
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1223 of file amsplain.bst
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1223 of file amsplain.bst
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1223 of file amsplain.bst
+Too many commas in name 1 of "Komorowski, M., Marshall, D. C., Salciccioli, J. D., \& Crutain, Y." for entry komorowski2016exploratory
+while executing---line 1223 of file amsplain.bst
+You've used 5 entries,
+            2213 wiz_defined-function locations,
+            528 strings with 4678 characters,
+and the built_in function-call counts, 1587 in all, are:
+= -- 138
+> -- 63
+< -- 0
++ -- 25
+- -- 20
+* -- 115
+:= -- 254
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 25
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 68
+empty$ -- 145
+format.name$ -- 20
+if$ -- 336
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 12
+newline$ -- 25
+num.names$ -- 10
+pop$ -- 37
+preamble$ -- 1
+purify$ -- 20
+quote$ -- 0
+skip$ -- 48
+stack$ -- 0
+substring$ -- 103
+swap$ -- 13
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 16
+width$ -- 6
+write$ -- 51
+(There were 10 error messages)

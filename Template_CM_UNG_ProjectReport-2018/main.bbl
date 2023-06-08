@@ -7,27 +7,26 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{1}
 
-\bibitem{Doe}
-R.~Doe, \emph{Miktex url}, \url {http://www.miktex.org}, June 2009.
+\bibitem{han2011data}
+Jiawei Han, Jian Pei, and Micheline Kamber, \emph{Data mining: Concepts and
+  techniques}, Morgan Kaufmann, 2011.
 
-\bibitem{Gokul}
-K.~C. Gokul, D.~B. Gurung, and P.~R. Adhikary, \emph{Fem approach for one
-  dimensional temperature distribution in the human eye}, Proceedings of
-  National Conference on Mathematics (Kathmandu) (P.~R. Adhikary, K.~Jha, and
-  C.~Bhatta, eds.), Nepal Mathematical Society, 2012, pp.~35--46.
+\bibitem{hughes2018feature}
+G.~Hughes and A.~Likhoded, \emph{Feature selection when attributes are missing
+  completely at random}, Data Mining and Knowledge Discovery \textbf{32}
+  (2018), no.~3, 623--655.
 
-\bibitem{db1}
-D.~B. Gurung, \emph{Mathematical study of abnormal thermoregulation in human
-  dermal parts}, Ph{D} {D}issertation, Kathmandu University, 2008, pp.~1--188.
+\bibitem{komorowski2016exploratory}
+Marshall D. C. Salciccioli J. D. \& Crutain~Y. Komorowski, M.,
+  \emph{Exploratory data analysis}, In MIT Critical Data (Ed.), Secondary
+  Analysis of Electronic Health Records (2016), 185--203.
 
-\bibitem{HK}
-H.~Kopka and P.~W. Daly, \emph{A guide to latex}, Addison-Wesley, Reading, MA,
-  1999.
+\bibitem{mitchell1997machine}
+Tom Mitchell, \emph{Machine learning}, McGraw-Hill, 1997.
 
-\bibitem{db3}
-B.~Roy, S.~K. Roy, and D.~B. Gurung, \emph{Holling-{T}anner model with
-  {B}eddington-{D}e{A}ngelis functional response and time delay introducing
-  harvesting}, Mathematics and Computers in Simulation \textbf{142} (2017),
-  1--14.
+\bibitem{peng2005feature}
+H.~Peng, F.~Long, and C.~Ding, \emph{Feature selection for high-dimensional
+  data: A fast correlation-based filter solution}, Proceedings of the Twentieth
+  International Conference on Machine Learning, 2005, pp.~856--863.
 
 \end{thebibliography}

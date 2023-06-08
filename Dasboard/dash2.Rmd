@@ -1,0 +1,50 @@
+---
+title: "EDA DAshboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(htmltools)
+library(highcharter)
+library(tidyverse)
+library(gt)
+library(viridis)
+library(ggplot2)
+```
+
+
+```{r}
+data <- df <- read.csv("train.csv")
+```
+
+General
+=====================================================
+
+Column {.tabset .tabset-fade data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
