@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  19 MAY 2023 10:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.12)  9 JUN 2023 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1005,70 +1005,207 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (progrss.nav) [1{C:/Users/03aay/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.
 map}
 
-] [2
+]
+pdfTeX warning (ext4): destination with the same identifier (name{Navigation1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 	\end{frame}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 	\end{frame}
+                  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+
+ []
+
+[2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
  []
 
 [3
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-
- []
-
-[4
+] [4
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+<sample.png, id=348, 370.38374pt x 398.08725pt>
+File: sample.png Graphic file (type png)
+<use sample.png>
+Package pdftex.def Info: sample.png  used on input line 57.
+(pdftex.def)             Requested size: 199.7386pt x 182.18083pt.
+ [5
 
- (C:\Users\03aay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ <./sample.png>] [6
+
+] [7
+
+] [8
+
+]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 72
+.
+
+(C:\Users\03aay\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
+
+
+(C:\Users\03aay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
 
 
 (C:\Users\03aay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 61.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 72.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 61.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 72.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 61.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 72.
 
-[5
+[9
 
 ]
-<sample.png, id=246, 370.38374pt x 398.08725pt>
-File: sample.png Graphic file (type png)
-<use sample.png>
-Package pdftex.def Info: sample.png  used on input line 69.
-(pdftex.def)             Requested size: 199.7386pt x 182.18083pt.
- [6
+<pre.png, id=614, 308.352pt x 281.25075pt>
+File: pre.png Graphic file (type png)
+<use pre.png>
+Package pdftex.def Info: pre.png  used on input line 81.
+(pdftex.def)             Requested size: 199.73947pt x 151.81305pt.
 
- <./sample.png>] [7
+Overfull \vbox (12.97505pt too high) detected at line 81
+ []
 
-] [8
+[10
 
-] [9
+ <./pre.png>]
+<s_stat.png, id=668, 236.082pt x 142.73325pt>
+File: s_stat.png Graphic file (type png)
+<use s_stat.png>
+Package pdftex.def Info: s_stat.png  used on input line 89.
+(pdftex.def)             Requested size: 199.73763pt x 151.8301pt.
+ [11
 
-] [10
+ <./s_stat.png>]
+<corr.png, id=722, 505.89pt x 505.89pt>
+File: corr.png Graphic file (type png)
+<use corr.png>
+Package pdftex.def Info: corr.png  used on input line 96.
+(pdftex.def)             Requested size: 199.73558pt x 151.81448pt.
+ [12
 
-] [11
+ <./corr.png>]
+<rel.png, id=777, 505.89pt x 505.89pt>
+File: rel.png Graphic file (type png)
+<use rel.png>
+Package pdftex.def Info: rel.png  used on input line 103.
+(pdftex.def)             Requested size: 199.73558pt x 151.81448pt.
+ [13
+
+ <./rel.png>]
+<status.png, id=831, 505.89pt x 505.89pt>
+File: status.png Graphic file (type png)
+<use status.png>
+Package pdftex.def Info: status.png  used on input line 111.
+(pdftex.def)             Requested size: 199.73558pt x 151.81448pt.
+
+Overfull \vbox (12.97649pt too high) detected at line 111
+ []
+
+[14
+
+ <./status.png>]
+<f-age.png, id=885, 505.89pt x 505.89pt>
+File: f-age.png Graphic file (type png)
+<use f-age.png>
+Package pdftex.def Info: f-age.png  used on input line 120.
+(pdftex.def)             Requested size: 199.73558pt x 151.81448pt.
+
+Overfull \vbox (1.45695pt too high) detected at line 120
+ []
+
+[15
+
+ <./f-age.png>]
+<gy.png, id=939, 505.89pt x 505.89pt>
+File: gy.png Graphic file (type png)
+<use gy.png>
+Package pdftex.def Info: gy.png  used on input line 129.
+(pdftex.def)             Requested size: 199.73558pt x 151.81448pt.
+
+Overfull \vbox (1.58841pt too high) detected at line 129
+ []
+
+[16
+
+ <./gy.png>]
+<gn.png, id=993, 505.89pt x 505.89pt>
+File: gn.png Graphic file (type png)
+<use gn.png>
+Package pdftex.def Info: gn.png  used on input line 137.
+(pdftex.def)             Requested size: 199.73558pt x 151.81448pt.
+ [17
+
+ <./gn.png>]
+<s1.png, id=1047, 505.89pt x 505.89pt>
+File: s1.png Graphic file (type png)
+<use s1.png>
+Package pdftex.def Info: s1.png  used on input line 145.
+(pdftex.def)             Requested size: 199.73558pt x 151.81448pt.
+ [18
+
+ <./s1.png>]
+<s0.png, id=1102, 505.89pt x 505.89pt>
+File: s0.png Graphic file (type png)
+<use s0.png>
+Package pdftex.def Info: s0.png  used on input line 153.
+(pdftex.def)             Requested size: 199.73558pt x 151.81448pt.
+ [19
+
+ <./s0.png>] [20
+
+]
+<dash.png, id=1208, 599.23875pt x 507.0945pt>
+File: dash.png Graphic file (type png)
+<use dash.png>
+Package pdftex.def Info: dash.png  used on input line 164.
+(pdftex.def)             Requested size: 199.73357pt x 151.82pt.
+ [21
+
+ <./dash.png>]
+Overfull \hbox (1.29216pt too wide) in paragraph at lines 185--185
+[]\T1/phv/m/n/10.95 In this EDA project, we ap-plied var-i-ous sta-tis-ti-cal a
+nal-y-sis, graph-
+ []
+
+[22
+
+] [23
+
+] [24
+
+] [25
 
 ]
 \tf@nav=\write6
@@ -1082,23 +1219,23 @@ Package pdftex.def Info: sample.png  used on input line 69.
 
  (progrss.aux)
 Package rerunfilecheck Info: File `progrss.out' has not changed.
-(rerunfilecheck)             Checksum: C65D4EBF0C67926E1BE3E2ECC2AAD6ED;476.
+(rerunfilecheck)             Checksum: C737638A5D45EDC01E11A83C9A6119BB;445.
  ) 
 Here is how much of TeX's memory you used:
- 23080 strings out of 476406
- 453044 string characters out of 2789567
- 1864787 words of memory out of 3000000
- 42917 multiletter control sequences out of 15000+600000
- 541713 words of font info for 67 fonts, out of 8000000 for 9000
+ 23248 strings out of 476406
+ 454965 string characters out of 2789567
+ 1873787 words of memory out of 3000000
+ 43041 multiletter control sequences out of 15000+600000
+ 542334 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,122p,433b,781s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/03aay/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
-/Users/03aay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><C:/Users/03aay/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uh
-vr8a.pfb>
-Output written on progrss.pdf (11 pages, 177879 bytes).
+/Users/03aay/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><
+C:/Users/03aay/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pf
+b>
+Output written on progrss.pdf (26 pages, 494196 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1498 PDF objects out of 1728 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

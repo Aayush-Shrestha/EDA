@@ -1,5 +1,5 @@
 \babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Objective}{5}{0}{2}
-\beamer@sectionintoc {3}{Progressed Work}{6}{0}{3}
-\beamer@sectionintoc {4}{Work to Complete}{10}{0}{4}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Methodology}{6}{0}{2}
+\beamer@sectionintoc {3}{Completed Work}{10}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{22}{0}{4}

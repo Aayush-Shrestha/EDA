@@ -1,50 +1,73 @@
 ---
-title: "EDA DAshboard"
+title: "Genetic Disorder Dashboard"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
     vertical_layout: fill
+    runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
-library(htmltools)
-library(highcharter)
 library(tidyverse)
-library(gt)
 library(viridis)
 library(ggplot2)
+
+# Load the dataset
+df <- read.csv("processed.csv")  # Replace "your_dataset.csv" with the actual file name
+
+# Convert character columns to factors for better visualization
+df <- df %>% 
+  mutate(across(where(is.character), as.factor))
+
 ```
 
-
 ```{r}
-data <- df <- read.csv("train.csv")
+columns <- names(df)
+options <- columns[-length(columns)]
+selectInput("Columns", label = "Columns", choices = options, selected = "All")
+
+custom_colors <- viridis::plasma(n = 9)
+
 ```
 
 General
 =====================================================
 
-Column {.tabset .tabset-fade data-width=650}
+Column {.tabset .tabset-fade }
 -----------------------------------------------------------------------
 
 ### Chart A
-
 ```{r}
+observe({
+  selected_input <- input$Columns
+  
+  output$plot <- renderUI({
+    if (length(unique(df[[selected_input]])) < 5) {
+      plotOutput("bar_plot")
+    } else {
+      plotOutput("box_plot")
+    }
+  })
+  
+  output$bar_plot <- renderPlot({
+  ggplot(data = df, aes(x = Disorder_Subclass, group = df[[selected_input]])) +
+    geom_bar(aes(fill = df[[selected_input]]), width = 0.6) +
+    scale_x_discrete(guide = guide_axis(n.dodge = 3)) 
+})
+  
+  output$box_plot <- renderPlot({
+  ggplot(data = df, aes(x = Disorder_Subclass, y = df[[selected_input]])) +
+    geom_boxplot(fill = custom_colors) +
+    scale_x_discrete(guide = guide_axis(n.dodge = 3))
+})
+
+})
+
+uiOutput("plot")
+
+
 
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
 
-### Chart B
-
-```{r}
-
-```
-
-### Chart C
-
-```{r}
-
-```
 

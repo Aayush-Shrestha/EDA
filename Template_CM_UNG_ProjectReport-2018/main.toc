@@ -1,8 +1,9 @@
-\contentsline {chapter}{\bf CERTIFICATION}{ii}{}%
-\contentsline {chapter}{\bf ACKNOWLEDGEMENTS}{iii}{}%
-\contentsline {chapter}{\bf ABSTRACT}{iv}{}%
-\contentsline {chapter}{LIST OF FIGURES}{viii}{}%
-\contentsline {chapter}{LIST OF TABLES}{ix}{}%
+\contentsline {chapter}{\bf DECLARATION}{ii}{}%
+\contentsline {chapter}{\bf CERTIFICATION}{iii}{}%
+\contentsline {chapter}{\bf ACKNOWLEDGEMENTS}{iv}{}%
+\contentsline {chapter}{\bf ABSTRACT}{v}{}%
+\contentsline {chapter}{LIST OF FIGURES}{ix}{}%
+\contentsline {chapter}{LIST OF TABLES}{x}{}%
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{}%
 \contentsline {section}{\numberline {1.1}{\bf {Background}}}{1}{}%
 \contentsline {section}{\numberline {1.2}{\bf {Objectives}}}{2}{}%
